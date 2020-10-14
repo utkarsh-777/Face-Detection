@@ -1,7 +1,7 @@
 import numpy
 import cv2
 video_capture = cv2.VideoCapture(0)
-cascPath = "haarcascade_frontalface_default.xml"
+cascPath = r"C:\Users\kumar\Desktop\Face Detection Project\simple face detection\haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 video_capture = cv2.VideoCapture(0)
 while True:

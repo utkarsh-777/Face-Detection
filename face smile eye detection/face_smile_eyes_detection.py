@@ -1,8 +1,8 @@
 import numpy as np
 import cv2
-faceCascade = cv2.CascadeClassifier('Cascades/haarcascade_frontalface_default.xml')
-eyeCascade = cv2.CascadeClassifier('Cascades/haarcascade_eye.xml')
-smileCascade = cv2.CascadeClassifier('Cascades/haarcascade_smile.xml')
+faceCascade = cv2.CascadeClassifier(r"C:\Users\kumar\Desktop\Face Detection Project\face smile eye detection\Cascades\haarcascade_frontalface_default.xml")
+eyeCascade = cv2.CascadeClassifier(r"C:\Users\kumar\Desktop\Face Detection Project\face smile eye detection\Cascades\haarcascade_eye.xml")
+smileCascade = cv2.CascadeClassifier(r"C:\Users\kumar\Desktop\Face Detection Project\face smile eye detection\Cascades\haarcascade_smile.xml")
 
 cap = cv2.VideoCapture(0)
 cap.set(3,640) # set Width

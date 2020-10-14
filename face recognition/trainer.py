@@ -3,9 +3,9 @@ import os
 import numpy as np
 import cv2
 # Path for face image database
-path = 'dataset'
+path = r'C:\Users\kumar\Desktop\Face Detection Project\face recognition\dataset'
 recognizer = cv2.face.LBPHFaceRecognizer_create()
-detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml");# function to get the images and label data
+detector = cv2.CascadeClassifier(r"C:\Users\kumar\Desktop\Face Detection Project\face recognition\haarcascade_frontalface_default.xml");# function to get the images and label data
 def getImagesAndLabels(path):
     imagePaths = [os.path.join(path,f) for f in os.listdir(path)]     
     faceSamples=[]
@@ -22,5 +22,5 @@ def getImagesAndLabels(path):
 print("\n [INFO] Training faces. It will take a few seconds. Wait ...")
 faces,ids = getImagesAndLabels(path)
 recognizer.train(faces, np.array(ids))# Save the model into trainer/trainer.yml
-recognizer.write('trainer/trainer.yml') # Print the numer of faces trained and end program
+recognizer.write(r'C:\Users\kumar\Desktop\Face Detection Project\face recognition\trainer\trainer.yml') # Print the numer of faces trained and end program
 print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(ids))))

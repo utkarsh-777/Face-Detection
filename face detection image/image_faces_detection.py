@@ -1,8 +1,7 @@
-import numpy
 import cv2
-cascPath = "haarcascade_frontalface_default.xml"
+cascPath = r"C:\Users\kumar\Desktop\Face Detection Project\face detection image\haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
-image = cv2.imread("abba.png")
+image = cv2.imread(r"C:\Users\kumar\Desktop\Face Detection Project\face detection image\abba.png")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 faces = faceCascade.detectMultiScale(
     gray,
